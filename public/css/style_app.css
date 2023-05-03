@@ -1,0 +1,297 @@
+:root{
+  --color1:  #2E8BC0;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  transition: .5s;
+}
+
+
+.navbar-scroll {
+  background: rgba(0, 0, 0, 0.6) !important;
+  transition: .3s;
+}
+
+
+
+.navbar-brand {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.navbar-toggler {
+  border: none!important;
+  outline: none!important;
+
+}
+
+.navbar-toggler i {
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link{
+  border: none!important;
+  outline: none!important;
+  color: white!important;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.image-nav {
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 400px !important;
+  position: relative !important;
+  background: linear-gradient(to right, hsla(197, 38%, 28%, 0.404), hsla(194, 35%, 19%, 0.548), hsla(198, 43%, 11%, 0.548)), url('../img/diseno-web.jpg');
+  background-attachment: fixed;
+
+}
+
+#letter:hover{
+  color: var(--color1) !important;
+}
+#letteron:hover{
+ background-color: var(--color1) !important;
+ border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+
+  .navbar {
+    background: transparent;
+    transition: .5s;
+  }
+  .brand .navbar-brand {
+    font-size: 26px;
+    border: none!important;
+    outline: none!important;
+    font-family: 'Roboto', sans-serif;
+    color: #fff!important;
+  }
+
+  .navbar-nav .nav-item .nav-link{
+    color: white!important;
+  }
+  .nav-link {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+  }
+  .nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width .3s;
+  }
+
+  .nav-link:hover::after {
+    width: 45%;
+    transition: width .3s;
+  }
+
+}
+
+
+html{
+overflow-x:hidden ;
+background-color: #f2f1f5;
+}
+
+
+#contenido{
+position: absolute;
+background-color: #f2f1f5;
+height: auto;
+width: 100%;
+}
+
+
+.border-navar{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.fisrtbrand{
+  text-decoration: none;
+  color: var(--color1);
+}
+
+
+.fila{
+  border: 3px solid blue;
+  background-color: lightblue;
+  margin-bottom: 50px;
+  height: 180px;
+}
+.columna{
+  background-color: lightgreen;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+
+.main{
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.main ul h2{
+  color: #3a6daa;
+}
+
+.main ul li{
+  list-style: none;
+  margin-bottom: 20%;
+}
+
+.main ul li h6{
+  color: #8eb5e2;
+}
+
+
+
+.avatar-size{
+    margin-right: 20px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+#panel{
+margin-bottom: 0%;
+}
+
+
+#panel-tittle{
+    height: 60px;
+    color: #a6a6a7;
+    font: 30px Montserrat;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+
+#panel .row{
+    margin-bottom: 30px;
+    height: 290px;
+    width: 60%;
+    margin-left: 200px;
+}
+
+
+.option{
+    position: relative;
+    box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.123);
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+
+
+.areaoption{
+    text-transform: capitalize;
+
+}
+
+
+.areaoption .head{
+    margin-top: 15%;
+    height: 90px;
+     text-align: center;
+}
+
+
+.areaoption .body{
+    height: 125px;
+     text-align: center;
+     border-radius: 4px;
+}
+
+
+
+.areaoption .body button{
+    width: 101px;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #00bfc3;
+    color: #fff;
+    font: 300 14px Montserrat;
+    margin-bottom: 15px;
+}
+
+
+.uploadcurriculum{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 100px;
+    width: 90%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.uploadlist{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.pdfcurriculum{
+    position: relative;
+    height: 8em !important;
+    width: 5em !important;
+    float: left;
+    margin-left: 6% !important;
+    margin-bottom: 15% !important;
+    border-radius: 6px;
+}
+
+.pdfcurriculum img{
+    height: 3.5em;
+    margin: .5rem;
+
+}
+
+.pdfcurriculum h2{
+     margin: 2%;
+
+}
+
+
+.pdfcurriculum  h2{
+    font-size: 9px;
+}
+
+
+.delete{
+    position: absolute;
+    display: flex;
+    border: none;
+    width: 20px;
+    height: 40px;
+    background: none;
+    background-image: url(/public/img/delete.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 30px;
+    top: 52%;
+}
